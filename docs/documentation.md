@@ -75,39 +75,13 @@
 -   **For point locations** like buildings, filling out the exact GPS
     point location in the Excel template is sufficient. We estimate that about 90% of all project locations are point locations.
 
--   **For line and polygon geometries,** the gateway GPS point location is stored in Excel. In suh this case, geometry data should be supplied additionally in KML[^2] for- mat separately for each project location. For multiple line or polygon locations, multiple KML files have to be submitted. A single KML file can however contain a single geometry (e.g., a road) or multiple geometries (e.g., multiple agricultural plots) that are linked to the gateway location collected in Excel. Multiple KML files should be submitted to KfW as.zip or .tar container. The data collector must ensure that the KfW staff responsible for uploading the data into the GeoApp are able to connect single KML files with project locations to the gateway points in Excel. To do so, the data collectors need to use the unique identifier given in the Excel template (column "Unique ID") together with the respective location name, separated by an underscore character "\_" as filename for the KML data. An example of such a KML filename is "00345_Ouagadougou.kml". We follow this two-step approach for line and polygon geodata to ensure that all relevant metadata is collected in a clean way in Excel while still being able to submit relevant geometry information in a common geo--standard. It is strongly encouraged to submit additional geometry information in KML for locations larger than 1000 m (line) or 500 m2 (shapes) wherever possible to enable KfW to see the spatial delimitation of our projects (e.g., a transmission line or the boundaries of a protected area). **KML files are also to be submitted using** **WGS 84 as the coordinate reference system.** The WG S84 datum is also used by OpenStreetMaps and Google Maps
-> [(http://www.opengis.net/def/crs/EPSG/0/4326](http://www.opengis.net/def/crs/EPSG/0/4326)
-> KML Template file). The complete specification for OGC KML can be
-> found at [http://](http://www.opengeospatial.org/standards/kml/)
-> [www.opengeospatial.org/standards/kml/](http://www.opengeospatial.org/standards/kml/)
-> or <https://www.ogc.org/standards/kml>.
+-   **For line and polygon geometries,** the gateway GPS point location is stored in Excel. In suh this case, geometry data should be supplied additionally in KML[^2] for- mat separately for each project location. For multiple line or polygon locations, multiple KML files have to be submitted. A single KML file can however contain a single geometry (e.g., a road) or multiple geometries (e.g., multiple agricultural plots) that are linked to the gateway location collected in Excel. Multiple KML files should be submitted to KfW as.zip or .tar container. The data collector must ensure that the KfW staff responsible for uploading the data into the GeoApp are able to connect single KML files with project locations to the gateway points in Excel. To do so, the data collectors need to use the unique identifier given in the Excel template (column "Unique ID") together with the respective location name, separated by an underscore character "\_" as filename for the KML data. An example of such a KML filename is "00345_Ouagadougou.kml". We follow this two-step approach for line and polygon geodata to ensure that all relevant metadata is collected in a clean way in Excel while still being able to submit relevant geometry information in a common geo--standard. It is strongly encouraged to submit additional geometry information in KML for locations larger than 1000 m (line) or 500 m2 (shapes) wherever possible to enable KfW to see the spatial delimitation of our projects (e.g., a transmission line or the boundaries of a protected area). **KML files are also to be submitted using** **WGS 84 as the coordinate reference system.** The WG S84 datum is also used by OpenStreetMaps and Google Maps. The complete specification for OGC KML can be found [here](http://www.opengeospatial.org/standards/kml/).
 >
-> It is strongly encouraged to check the data before submission in GIS
-> software, such as QGIS or Google Earth Pro. This reduces the need to
-> go back and forth between the responsible project managers and the
-> projects.
+> It is strongly encouraged to check the data before submission in GIS software, such as QGIS or Google Earth Pro. This reduces the need to go back and forth between the responsible project managers and the projects.
 >
-> 37 in the sense of the IATI- Standard
->
-> 38 World Geodetic System 1984,
-> <https://support.virtual-surveyor.com/en/support/solutions/articles/1000261351-what-is-wgs84->
->
-> 39 KML is an open standard officially named the OpenGIS KML Encoding
-> Standard (OGC KML). It is maintained by the Open Geospatial
-> Consortium, Inc. (OGC). Other Geoformats (e.g., Shapefiles or GeoJson)
-> can usually be converted to KML in Standard GIS Software such as
-> ArcGIS or QGIS.
->
-> 148 \| **RMMV Guidebook**
-
 ##### Approximate locations using Excel Template and GADM standard
 
-> Approximate project locations should be collected by referencing the
-> respective adminis- trative unit on the lowest administrative scale
-> available in the GADM standard. GADM differentiates up to seven
-> different levels, although for many developing countries, only three
-> or four levels have yet been defined. Here are the most commonly
-> available admin- istrative unit levels:
+> Approximate project locations should be collected by referencing the respective adminis- trative unit on the lowest administrative scale available in the GADM standard. GADM differentiates up to seven different levels, although for many developing countries, only three or four levels have yet been defined. Here are the most commonly available admin- istrative unit levels:
 
 -   level 0 (shape of the national boundary)
 
@@ -117,16 +91,9 @@
 
 -   level 3 (community, tehsil, etc.)
 
-> If the respective administrative unit level has not been defined in
-> GADM, you may instead indicate the GPS coordinates of the respective
-> administrative unit center (munic- ipality, district center or similar
-> as a point location). In such case, you must specify the location as
-> "approximate" in column No. 21. of the Excel template "Geographic
-> Exactness according to IATI standard". This ensures that this location
-> is not confused with the actual location of the site.
+> If the respective administrative unit level has not been defined in GADM, you may instead indicate the GPS coordinates of the respective administrative unit center (munic- ipality, district center or similar as a point location). In such case, you must specify the location as "approximate" in column No. 21. of the Excel template "Geographic Exactness according to IATI standard". This ensures that this location is not confused with the actual location of the site.
 >
-> Mixing the administrative unit levels is not allowed because this
-> would render the Geo- data Model inconsistent.
+> Mixing the administrative unit levels is not allowed because this would render the Geo- data Model inconsistent.
 >
 > The GIS database of GADM can be downloaded at \>
 > <https://gadm.org/data.html> and ana- lyzed in a common Geographic
