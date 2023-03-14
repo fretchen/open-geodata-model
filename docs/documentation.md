@@ -41,7 +41,7 @@
 3.  Polygon geometries/shapes (e.g. a protected area or agricultural
     plots)
 
-> All exact project locations have to be collected at first as a point geometry that represents a gateway to the project location, irrespective of the actual feature geometry (i.e., also for lines and polygons). This may be for example the center of a road, a village adjacent to agricultural plots or the administration building of a protected forest. If there is a line or polygon geometry and no gateway can be defined, the geometrical center (centroid) is to be used. This information is to be collected in an Excel--template (xlsx) or a future open-source based geodata collection tool providing the geographical coordinates of the gateway point (more information to be provided at [KfW RMMV Guidebook](https://www.kfw-entwicklungsbank.de/Service/Publikationen-Videos/Publikationen-thematisch/Digitalisierung/RMMV-Guidebook/)\
+> All exact project locations have to be collected at first as a point geometry that represents a gateway to the project location, irrespective of the actual feature geometry (i.e., also for lines and polygons). This may be for example the center of a road, a village adjacent to agricultural plots or the administration building of a protected forest. If there is a line or polygon geometry and no gateway can be defined, the geometrical center (centroid) is to be used. This information is to be collected in an Excel--template (xlsx) or a future open-source based geodata collection tool providing the geographical coordinates of the gateway point (more information to be provided at [KfW RMMV Guidebook](https://www.kfw-entwicklungsbank.de/Service/Publikationen-Videos/Publikationen-thematisch/Digitalisierung/RMMV-Guidebook/)\.
 
 > In addition, line and polygon geometries have to be collected in KML[^2] format independently for each project site (details are given below in data formats and templates).
 
@@ -53,12 +53,9 @@
 >
 
 
-##### When to use approximate 37 geo location information
+##### When to use approximate[^1] geo location information
 
-> Approximate locations can be used when no exact geoinformation is
-> available (yet), or when exact location information should not be
-> collected and stored. The approximate location option should be chosen
-> if one or more of the following circumstances apply:
+> Approximate locations can be used when no exact geoinformation is available (yet), or when exact location information should not be collected and stored. The approximate location option should be chosen if one or more of the following circumstances apply:
 
 -   an exact project location has not (yet) been specified
 
@@ -66,9 +63,7 @@
 
 -   the target location(s) is/are one or more administrative units.
 
-> In such cases, approximate location must be defined based on
-> administrative units applying the GADM standard \>
-> <https://gadm.org/>. GADM is used as a common standard for
+> In such cases, approximate location must be defined based on administrative units applying the [GADM standard](https://gadm.org/)\. GADM is used as a common standard for
 > administrative units to afford harmonized and consistent collection of
 > approximate locations.
 
