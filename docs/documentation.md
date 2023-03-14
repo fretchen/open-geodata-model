@@ -49,9 +49,9 @@
 
 #### Figure 1: Schematic Representation of Different Location Data for the GeoApp
 
+> Figure 
 > **Legend**
 >
-
 
 ##### When to use approximate[^1] geo location information
 
@@ -63,27 +63,14 @@
 
 -   the target location(s) is/are one or more administrative units.
 
-> In such cases, approximate location must be defined based on administrative units applying the [GADM standard](https://gadm.org/)\. GADM is used as a common standard for
-> administrative units to afford harmonized and consistent collection of
-> approximate locations.
+> In such cases, approximate location must be defined based on administrative units applying the [GADM standard](https://gadm.org/)\. GADM is used as a common standard for administrative units to afford harmonized and consistent collection of approximate locations.
 
-#### A3.1.2 Project Geodata Standard Formats and Templates
+#### Project Geodata Standard Formats and Templates
 
 ##### Exact locations using Excel Template (and potentially KML files)
 
-> As outlined above, all project locations should be collected using the
-> Excel template (or a future open-source-based geodata collection tool)
-> provided by KfW, which utilizes pre- defined categories under the IATI
-> standard and built-in selection methods facilitating clean data entry.
-> The geolocation is to be submitted in Excel with the geo-coordinates
->
-> that can be obtained with a GPS tool. **All coordinates are to be
-> collected using**
->
-> **WGS 84** 38 **as the coordinate reference system.** WGS 84 is the
-> de--facto standard for web mapping applications. Geo-coordinates are
-> to be provided in the decimal place format 00.00000 in the order LONG,
-> LAT (using at least 5 digits after the separator).
+> As outlined above, all project locations should be collected using the Excel template (or a future open-source-based geodata collection tool) provided by KfW, which utilizes predefined categories under the IATI standard and built-in selection methods facilitating clean data entry. The geolocation is to be submitted in Excel with the geo-coordinates that can be obtained with a GPS tool. **All coordinates are to be collected using** **WGS 84** [^3] **as the coordinate reference system.** WGS 84 is the de--facto standard for web mapping applications. Geo-coordinates are to be provided in the decimal place format 00.00000 in the order LONG, LAT (using at least 5 digits after the separator).
+[^3]: > 38 [World Geodetic System 1984](https://support.virtual-surveyor.com/en/support/solutions/articles/1000261351-what-is-wgs84\)
 
 -   **For point locations** like buildings, filling out the exact GPS
     point location in the
