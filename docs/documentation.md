@@ -30,7 +30,7 @@
 >
 > If no exact locations can be determined at this stage, approximate location should be used and later be checked during the project appraisal and inception stages (including possible transformation from approximate to exact location information). During project implementation, data should be updated at least annually in project progress reviews, and in order to reflect potential changes in the geographical allocation of funds, which are common in Financial Cooperation projects.
 
-##### Geometrical characteristics of exact[^1] 35 geo location information
+##### Geometrical characteristics of exact[^1] geo location information
 
 > \"Exact locations\" are measured via GPS devices, and geo-coordinates are to be collected as precisely as possible. For this purpose, three different geometry types can be used
 
@@ -41,58 +41,17 @@
 3.  Polygon geometries/shapes (e.g. a protected area or agricultural
     plots)
 
-> All exact project locations have to be collected at first as a point geometry that represents a gateway to the project location, irrespective of the actual feature geometry (i.e., also for lines and polygons). This may be for example the center of a road, a village adjacent to agricultural plots or the administration building of a protected forest. If there is a line or polygon geometry and no gateway can be defined, the geometrical center (centroid) is to be used. This information is to be collected in an Excel--template (xlsx) or a future open-source based geodata collection tool providing the geographical coordinates of the gateway point (more information to be provided at \>
-> [https://www.](https://www.kfw-entwicklungsbank.de/Service/Publikationen-Videos/Publikationen-thematisch/Digitalisierung/RMMV-Guidebook/)
-> [kfw-entwicklungsbank.de/Service/Publikationen-Videos/Publikationen-thematisch/Digi-](https://www.kfw-entwicklungsbank.de/Service/Publikationen-Videos/Publikationen-thematisch/Digitalisierung/RMMV-Guidebook/)
-> [talisierung/RMMV-Guidebook/.](https://www.kfw-entwicklungsbank.de/Service/Publikationen-Videos/Publikationen-thematisch/Digitalisierung/RMMV-Guidebook/)
-> In addition, line and polygon geometries have to be collected in KML36 format independently for each project site (details are given below in data formats and templates).
+> All exact project locations have to be collected at first as a point geometry that represents a gateway to the project location, irrespective of the actual feature geometry (i.e., also for lines and polygons). This may be for example the center of a road, a village adjacent to agricultural plots or the administration building of a protected forest. If there is a line or polygon geometry and no gateway can be defined, the geometrical center (centroid) is to be used. This information is to be collected in an Excel--template (xlsx) or a future open-source based geodata collection tool providing the geographical coordinates of the gateway point (more information to be provided at [KfW RMMV Guidebook](https://www.kfw-entwicklungsbank.de/Service/Publikationen-Videos/Publikationen-thematisch/Digitalisierung/RMMV-Guidebook/)\
 
-#### ![](media/image1.png)Figure A3.1: Schematic Representation of Different Location Data for the GeoApp
+> In addition, line and polygon geometries have to be collected in KML[^2] format independently for each project site (details are given below in data formats and templates).
+
+[^2]: KML (KMZ) is an open XML Standard for Points, Lines and Shapes
+
+#### Figure 1: Schematic Representation of Different Location Data for the GeoApp
 
 > **Legend**
 >
-> Exact Locations
->
-> ![](media/image4.png){width="0.23527887139107612in"
-> height="8.76104549431321e-2in"}![](media/image5.png){width="0.13386045494313212in"
-> height="0.13384623797025372in"} Point Line
->
-> ![](media/image6.png){width="0.23847878390201224in"
-> height="0.14506889763779526in"} Polygon
->
-> Gateway Points
->
-> ![](media/image7.png){width="0.13386045494313212in"
-> height="0.13384623797025372in"} Line Gateway
-> ![](media/image8.png){width="0.13386045494313212in"
-> height="0.13384623797025372in"} Polygon Gateway
->
-> Centroid Points
->
-> ![](media/image9.png){width="0.13386045494313212in"
-> height="0.13384623797025372in"} Polygon Centroid
-> ![](media/image10.png){width="0.13386045494313212in"
-> height="0.13386045494313212in"} Line Centroid
->
-> Approximate Locations
->
-> Administrational Boundaries (GADM
->
-> ![](media/image11.png){width="0.31234142607174104in"
-> height="9.055555555555556e-2in"}Municipality/Distrikt Center
 
-![](media/image12.png)
-
-![](media/image5.png){width="0.13272200349956256in"
-height="0.13270778652668416in"}![](media/image13.png){width="0.1562357830271216in"
-height="0.15625in"}
-
-![](media/image14.png){width="0.1562357830271216in"
-height="0.15625in"}![](media/image15.png)
-
-> 35 in the sense of the IATI- Standard
->
-> 36 KML (KMZ) is an open XML Standard for Points, Lines and Shapes
 
 ##### When to use approximate 37 geo location information
 
