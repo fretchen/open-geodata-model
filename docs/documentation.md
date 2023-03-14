@@ -95,176 +95,40 @@
 >
 > Mixing the administrative unit levels is not allowed because this would render the Geo- data Model inconsistent.
 >
-> The GIS database of GADM can be downloaded at \>
-> <https://gadm.org/data.html> and ana- lyzed in a common Geographic
-> Information System such as QGIS, ArcGIS, or Google Earth Pro. Data
-> collectors have to enter the GADM-defined polygon Geographic ID (GID),
-> the GID level and the utilized GADM database version. See [\> Figure
-> A3.2
-> below](#approximate-locations-using-excel-template-and-gadm-standard)
-> for more information:
+> The GIS database of GADM can be downloaded [here](https://gadm.org/data.html) and analyzed in a common Geographic Information System such as QGIS, ArcGIS, or Google Earth Pro. Data collectors have to enter the GADM-defined polygon Geographic ID (GID), the GID level and the utilized GADM database version. See [\> Figure 2 below](#approximate-locations-using-excel-template-and-gadm-standard) for more information:
 
-#### Figure A3.2: How to Collect Project Location Data
+#### Figure 2: How to Collect Project Location Data
 
 > **Legend**
 >
-> ![](media/image17.jpeg)Exact Locations
->
-> ![](media/image18.png)![](media/image19.png){width="0.13386045494313212in"
-> height="0.13384623797025372in"} Point
+> Picture
+> 
 
-![](media/image20.png){width="0.23527887139107612in"
-height="8.76104549431321e-2in"}Line and (for excel data choose Gateway
-Point or Centroid)
-
-![](media/image21.png){width="0.23847878390201224in"
-height="0.14506889763779526in"} Polygon and (for excel data choose
-Gateway Point or Centroid)
-
-> ![](media/image22.png)Gateway Points
->
-> ![](media/image17.jpeg)![](media/image24.png)![](media/image26.png){width="0.13386045494313212in"
-> height="0.13384623797025372in"} Line Gateway
-> ![](media/image27.png){width="0.13386045494313212in"
-> height="0.13384623797025372in"} Polygon Gateway
->
-> ![](media/image17.jpeg)Centroid Points
->
-> ![](media/image28.png){width="0.11344378827646544in"
-> height="0.11344378827646544in"}![](media/image29.png){width="0.13347112860892388in"
-> height="0.13348534558180228in"}![](media/image30.png){width="0.13386045494313212in"
-> height="0.13384951881014873in"} Polygon Centroid
-> ![](media/image31.png){width="0.13386045494313212in"
-> height="0.13386045494313212in"} Line Centroid
->
-> Approximate Locations
->
-> ![](media/image17.jpeg)![](media/image32.png){width="0.12057305336832896in"
-> height="0.16535542432195977in"}Administrational Boundaries (GADM) or
->
-> ![](media/image33.png)![](media/image11.png){width="0.31233923884514436in"
-> height="9.055555555555556e-2in"}![](media/image35.png){width="0.13347112860892388in"
-> height="0.13348534558180228in"}Municipality/Distrikt Center
 
 #### Table A3.1: How to Collect Which Type of Location Data?
 
-+---------------+--------------+-------------------+-----------------+
-| > **Type of   | >            | > **How to        | > **Comment**   |
-| > location    |  **Example** | > collect**       |                 |
-| > data**      |              |                   |                 |
-+===============+==============+===================+=================+
-| > Exact       |              |                   |                 |
-+---------------+--------------+-------------------+-----------------+
-| > Point       | > Hospital   | > Excel           |                 |
-|               |              | > (LAT/LONG)      |                 |
-+---------------+--------------+-------------------+-----------------+
-| > Line        | > Road       | > Excel           | > Choose        |
-|               |              | > (LAT/LONG) +    | > gateway point |
-|               |              | > KML             | > or            |
-+---------------+--------------+-------------------+-----------------+
-|               |              |                   | > centroid for  |
-|               |              |                   | > Excel         |
-+---------------+--------------+-------------------+-----------------+
-| > Polygon     | > Protected  | > Excel           | > Choose        |
-|               | > Area       | > (LAT/LONG) +    | > gateway point |
-|               |              | > KML             | > or            |
-+---------------+--------------+-------------------+-----------------+
-|               |              |                   | > centroid for  |
-|               |              |                   | > Excel         |
-+---------------+--------------+-------------------+-----------------+
-| > Point --    | > Start of a | > Excel           | > Complement    |
-| > Gateway     | > Road       | > (LAT/LONG)      | > with KML      |
-+---------------+--------------+-------------------+-----------------+
-|               |              |                   | > data if       |
-|               |              |                   | > possible      |
-+---------------+--------------+-------------------+-----------------+
-| > Point --    | > Center of  | > Excel           | > Complement    |
-| > Polygon     | > a          | > (LAT/LONG)      | > with KML      |
-+---------------+--------------+-------------------+-----------------+
-|               | > protected  |                   | > data if       |
-|               | > area       |                   | > possible      |
-+---------------+--------------+-------------------+-----------------+
-| > Approximate |              |                   |                 |
-+---------------+--------------+-------------------+-----------------+
-| > Adm         |              | > Excel (GADM) or | > If no GADM    |
-| inistrational |              | > Excel           | > boundaries    |
-+---------------+--------------+-------------------+-----------------+
-| > Boundaries  |              | > (LAT/LONG) +    | > are available |
-|               |              | > KML             | > you can also  |
-+---------------+--------------+-------------------+-----------------+
-|               |              |                   | > upload the    |
-|               |              |                   | > boundaries of |
-+---------------+--------------+-------------------+-----------------+
-|               |              |                   | > the           |
-|               |              |                   | > a             |
-|               |              |                   | dministrational |
-|               |              |                   | > area          |
-+---------------+--------------+-------------------+-----------------+
-|               |              |                   | > as a Polygon  |
-|               |              |                   | > in KML. Sup-  |
-+---------------+--------------+-------------------+-----------------+
-|               |              |                   | > plement this  |
-|               |              |                   | > information   |
-+---------------+--------------+-------------------+-----------------+
-|               |              |                   | > with Excel    |
-|               |              |                   | > where you can |
-+---------------+--------------+-------------------+-----------------+
-|               |              |                   | > give e.g.,    |
-|               |              |                   | > the centroid  |
-|               |              |                   | > of            |
-+---------------+--------------+-------------------+-----------------+
-|               |              |                   | > the polygon   |
-+---------------+--------------+-------------------+-----------------+
-| > Municipa    |              | > Excel           |                 |
-| lity/district |              | > (LAT/LONG)      |                 |
-+---------------+--------------+-------------------+-----------------+
-| > Center      |              |                   |                 |
-+---------------+--------------+-------------------+-----------------+
+### Exact
+| **Type of location data** | **Example**           | **How to collect**      |  **Comment**  |
+| --------------------------|:-----------------------:| -----------------------:| -------------:|
+| Point                     | Hospital              | Excel (LAT/LONG)        |               |
+| Line                      | Road                  | Excel (LAT/LONG) + KML  |Choose gateway point or centroid for Excel|
+| Polygon                   | Protected Area        | Excel (LAT/LONG) + KML  |Choose gateway point or centroid for Excel|
+| Point - Gateway           |Start of a Road        |    Excel (LAT/LONG)     |Complement with KML data if possible|
+| Point - Polygon           |Center of a protected area |    Excel (LAT/LONG) |Complement with KML data if possible |
 
-> Figure A3.3: How to Upload Which Type of Location Data?
 
-##### ![](media/image36.png)Geometry Types Upload MapView
+### Approximate
+| **Type of location data** | **Example**           | **How to collect**      |  **Comment**  |
+| --------------------------|:-----------------------:| -----------------------:| -------------:|
+| Administrational Boundaries  |     | Excel (GADM) or Excel (LAT/LONG) + KML|If no GADM boundaries are available you can also upload the boundaries of the administrational area as a Polygon in KML. Supplement this information with Excel where you can give e.g., the centroid of the polygon|               |
+| Municipality/district Center  |                   |Excel (LAT/LONG)  ||
 
-> ![Figure A3.3 illustrates that exact point locations need to be
-> collected through only using the KfW excel template, while line and
-> polygon locations additionally require submitting a kml-file
-> containing the GPS-coordinates of the lines and polygons of each
-> location in the excel
-> file.](media/image39.jpeg){width="0.4402515310586177in"
-> height="0.40562445319335083in"} ![Figure A3.3 illustrates that exact
-> point locations need to be collected through only using the KfW excel
-> template, while line and polygon locations additionally require
-> submitting a kml-file containing the GPS-coordinates of the lines and
-> polygons of each location in the excel
-> file.](media/image40.png){width="0.2775984251968504in"
-> height="0.38499890638670164in"}
->
-> ![](media/image41.png){width="0.110249343832021in"
-> height="0.13638779527559056in"}![](media/image42.png){width="0.110249343832021in"
-> height="0.136499343832021in"}![](media/image43.png){width="0.110249343832021in"
-> height="0.13638779527559056in"}Meta-Data + \"Gateway Point\" or
-> \"Centroid\" or \"Municipality Capital\"
 
-![](media/image44.png){width="0.2397998687664042in"
-height="0.1735411198600175in"}
+> #### Figure 3: How to Upload Which Type of Location Data?
+Insert Figure
 
-![](media/image45.png){width="0.23749671916010498in"
-height="0.17187445319335082in"}
 
-![](media/image45.png){width="0.23749671916010498in"
-height="0.17187445319335082in"}
-
-> Pure Geometries
-
-![](media/image45.png){width="0.23749671916010498in"
-height="0.17187445319335082in"}![](media/image46.png)
-
-![](media/image45.png){width="0.23749671916010498in"
-height="0.17187445319335082in"}
-
-> GeoApp Sprint Review
-
-##### ![](media/image47.png)How to compare project location data from existing systems (R/MIS, GIS)?
+##### How to compare project location data from existing systems (R/MIS, GIS)?
 
 > If a Geographic Information System (GIS), (Remote) Management
 > Information System (R/MIS) or Maintenance Management System (MMS) is
