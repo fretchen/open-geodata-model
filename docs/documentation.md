@@ -45,7 +45,7 @@
 
 > In addition, line and polygon geometries have to be collected in KML[^2] format independently for each project site (details are given below in data formats and templates).
 
-[^2]: KML (KMZ) is an open XML Standard for Points, Lines and Shapes
+[^2]: KML (KMZ) is an open XML Standard for Points, Lines and Shapes. Officially named the OpenGIS KML Encoding Standard (OGC KML). It is maintained by the Open Geospatial Consortium, Inc. (OGC). Other Geoformats (e.g., Shapefiles or Geojson) can usually be converted to KML in Standard GIS Software suchas ArcGIS or QGIS.
 
 #### Figure 1: Schematic Representation of Different Location Data for the GeoApp
 
@@ -73,42 +73,9 @@
 [^3]: > 38 [World Geodetic System 1984](https://support.virtual-surveyor.com/en/support/solutions/articles/1000261351-what-is-wgs84\)
 
 -   **For point locations** like buildings, filling out the exact GPS
-    point location in the
+    point location in the Excel template is sufficient. We estimate that about 90% of all project locations are point locations.
 
-> Excel template is sufficient. We estimate that about 90% of all
-> project locations are point locations.
-
--   **For line and polygon geometries,** the gateway GPS point location
-    is stored in
-
-> Excel. In suh this case, geometry data should be supplied additionally
-> in KML39 for- mat separately for each project location. For multiple
-> line or polygon locations, multi- ple KML files have to be submitted.
-> A single KML file can however contain a single geometry (e.g. a road)
-> or multiple geometries (e.g. multiple agricultural plots) that are
-> linked to the gateway location collected in Excel. Multiple KML files
-> should be submitted to KfW as.zip or .tar container. The data
-> collector must ensure that the KfW staff responsible for uploading the
-> data into the GeoApp are able to connect single KML files with project
-> locations to the gateway points in Excel. To do so, the data
-> collectors need to use the unique identifier given in the Excel
-> template (column "Unique ID") together with the respective location
-> name, separated by an underscore character "\_" as filename for the
-> KML data. An example of such a KML filename is
-> "00345_Ouagadougou.kml". We follow this two-step approach for line and
-> polygon geodata to ensure that all relevant metadata is collected in a
-> clean way in Excel while still being able to submit relevant geometry
-> information in a common geo-- standard. It is strongly encouraged to
-> submit additional geometry information in KML for locations larger
-> than 1000 m (line) or 500 m2 (shapes) wherever possible to enable KfW
-> to see the spatial delimitation of our projects (e.g. a transmission
-> line or
->
-> the boundaries of a protected area). **KML files are also to be
-> submitted using**
->
-> **WGS 84 as the coordinate reference system.** The WG S84 datum is
-> also used by OpenStreetMaps and Google Maps
+-   **For line and polygon geometries,** the gateway GPS point location is stored in Excel. In suh this case, geometry data should be supplied additionally in KML[^2] for- mat separately for each project location. For multiple line or polygon locations, multiple KML files have to be submitted. A single KML file can however contain a single geometry (e.g., a road) or multiple geometries (e.g., multiple agricultural plots) that are linked to the gateway location collected in Excel. Multiple KML files should be submitted to KfW as.zip or .tar container. The data collector must ensure that the KfW staff responsible for uploading the data into the GeoApp are able to connect single KML files with project locations to the gateway points in Excel. To do so, the data collectors need to use the unique identifier given in the Excel template (column "Unique ID") together with the respective location name, separated by an underscore character "\_" as filename for the KML data. An example of such a KML filename is "00345_Ouagadougou.kml". We follow this two-step approach for line and polygon geodata to ensure that all relevant metadata is collected in a clean way in Excel while still being able to submit relevant geometry information in a common geo--standard. It is strongly encouraged to submit additional geometry information in KML for locations larger than 1000 m (line) or 500 m2 (shapes) wherever possible to enable KfW to see the spatial delimitation of our projects (e.g., a transmission line or the boundaries of a protected area). **KML files are also to be submitted using** **WGS 84 as the coordinate reference system.** The WG S84 datum is also used by OpenStreetMaps and Google Maps
 > [(http://www.opengis.net/def/crs/EPSG/0/4326](http://www.opengis.net/def/crs/EPSG/0/4326)
 > KML Template file). The complete specification for OGC KML can be
 > found at [http://](http://www.opengeospatial.org/standards/kml/)
