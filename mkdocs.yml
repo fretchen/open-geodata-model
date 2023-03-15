@@ -16,6 +16,7 @@ nav:
   - "documentation.md"
     
 markdown_extensions:
+  - footnotes
   - toc
   - attr_list
   - md_in_html
