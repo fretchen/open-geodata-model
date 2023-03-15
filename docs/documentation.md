@@ -32,7 +32,7 @@ If no exact locations can be determined at this stage, approximate location shou
 
 ##### Geometrical characteristics of exact[^1] geo location information
 
-\"Exact locations\" are measured via GPS devices, and geo-coordinates are to be collected as precisely as possible. For this purpose, three different geometry types can be used
+'Exact locations' are measured via GPS devices, and geo-coordinates are to be collected as precisely as possible. For this purpose, three different geometry types can be used
 
 1.  Point geometries (e.g. a well or a hospital)
 
@@ -108,6 +108,7 @@ Picture
 #### Table 1: How to Collect Which Type of Location Data?
 
 **Exact**
+
 | **Type of location data** | **Example**           | **How to collect**      |  **Comment**  |
 | --------------------------|:-----------------------:| -----------------------:| -------------:|
 | Point                     | Hospital              | Excel (LAT/LONG)        |               |
@@ -118,6 +119,7 @@ Picture
 
 
 **Approximate**
+
 | **Type of location data** | **Example**           | **How to collect**      |  **Comment**  |
 | --------------------------|:-----------------------:| -----------------------:| -------------:|
 | Administrational Boundaries  |     | Excel (GADM) or Excel (LAT/LONG) + KML|If no GADM boundaries are available you can also upload the boundaries of the administrational area as a Polygon in KML. Supplement this information with Excel where you can give e.g., the centroid of the polygon|               |
