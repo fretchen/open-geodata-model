@@ -107,7 +107,7 @@ Picture
 
 #### Table 1: How to Collect Which Type of Location Data?
 
-### Exact
+**Exact**
 | **Type of location data** | **Example**           | **How to collect**      |  **Comment**  |
 | --------------------------|:-----------------------:| -----------------------:| -------------:|
 | Point                     | Hospital              | Excel (LAT/LONG)        |               |
@@ -117,7 +117,7 @@ Picture
 | Point - Polygon           |Center of a protected area |    Excel (LAT/LONG) |Complement with KML data if possible |
 
 
-### Approximate
+**Approximate**
 | **Type of location data** | **Example**           | **How to collect**      |  **Comment**  |
 | --------------------------|:-----------------------:| -----------------------:| -------------:|
 | Administrational Boundaries  |     | Excel (GADM) or Excel (LAT/LONG) + KML|If no GADM boundaries are available you can also upload the boundaries of the administrational area as a Polygon in KML. Supplement this information with Excel where you can give e.g., the centroid of the polygon|               |
@@ -156,14 +156,18 @@ Below, the required project location data is defined for all FC projects. Projec
 | 14. Budget share | Currency number in EUR  | Input  | No | Per location | The budget share allocated to this location in €. The sum of all locations in a project should add up to the budget sum in INPRO/PMT, including overheads. The budget sum is provided in the geodata collection ToR > Annex 3.2.
 | 15. DAC 5 Purpose Classification   |Text | Input | Yes | Per location | Assignment to the relevant DAC 5 Digit Codes from the respective 1 to 3 Codes defined for the project. For example, in a decentralization project, the construction of primary school locations is to be assigned to the respective Basic Education DAC 5-Code, while road rehabilitation sites within the same project are to be assigned to the respective Transport DAC 5-Code.
 | 16. Geographic Exactness according to IATI  |Select Text (exact or approximate) |   Input | Yes | Per location | The “exact” specification is to be used when the coder is confident of coding the geographically exact end destination of a financial flow. Flows that can only be traced to a general area or an approximate location are to be coded as “approximate.” In case of security risks (e.g. zones of conflict), we strongly recommend only publishing approximate locations.|
+
 **If exact locations are known, use Geo-Coordinates:**
+
 | **Name** | **Type of data** | **Source**      |  **Mandatory**  | **Asignment** | **Description** | 
 | ---------|:----------------:| ---------------:| ---------------:| --------------:| --------------:|
 | 17. Geo-Coordinates of the respective location gateway (Latitude/LAT) | Decimal | Input | Yes | Per location | Point: 1 coordinate (LAT). At least 5 digits after the dot for each coordinate. Only use if exact locations are known. Example: 50.12018514689011. Usage of WGS84 as Coordinate Reference System mandatory. |
 | 18. Geo-Coordinates of the respective location gateway (Longitude/LONG) | Decimal | Input | Yes | Per location | Point: 1 coordinates (LONG). At least 5 digits after the dot for each coordinate. Only use if exact locations are known. Example: 8.655474047059236. Usage of WGS84 as Coordinate Reference System mandatory |
 | 19. Related Community/Neighborhood/Village | Text | Input | No | Per location | This is for manually adding smaller locations or administrative unit names not identified in global geo-coordinates lists such as GADM.  |
 | 20. Additional Geodata submitted as KML (Lines/Polygons) | Select Text (yes/no) | Input | Yes | Per location |Are you providing additional geodata with the geometry shapes for line and polygon data? It his recommended to supply this kind of information as it helps KfW to better identify the project areas. Data has to be submitted as separate KML files per location (one file per location entry in the table).|
+
 **Use approximate locations according to the GADM standard only if exact locations are not (yet) known or are not to be collected, processed or transmitted:** 
+
 | **Name** | **Type of data** | **Source**      |  **Mandatory**  | **Asignment** | **Description** | 
 | ---------|:----------------:| ---------------:| ---------------:| --------------:| --------------:|
 | 21. GADM GID | Text | Input | Yes | Per approximate location | The Geographic ID (GID) of the administrative level that receives the financial flow. Try to use the lowest administrational level possible. For multiple approximate locations (administrational areas) use multiple data entries. Example value: VNM.1.1.1_1 for a specific area in Vietnam. Only use if exact locations are unknown. |
