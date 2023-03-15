@@ -2,23 +2,23 @@
 
 ## The KfW Geodata Model
 
-In this Section we explain the FC Geodata Model according to which project location data should be collected as well as technical requirements for the data collection. The goal is to inform KfW staff, PEA, consultants and other external stakeholders responsible for data collection as to the types of location data to be collected and in what form.
+In this Section we explain the FC Geodata Model according to which project location data should be collected as well as technical requirements for the data collection. The goal is to inform KfW staff, Project Executing Agencies (PEAs), consultants, and other external stakeholders responsible for data collection as to the types of location data to be collected and in what form.
 
-Our FC Geodata Model is based on the IATI standard. The IATI Standard is used by international development organizations and allows harmonization of FC project loca- tion data across heterogenous projects. The data to be collected are subject to minimum requirements in the form of mandatory fields, and there are optional fields flexibly usable for collecting site-specific information.
+Our FC Geodata Model is based on the International Aid Transparency Initiative (IATI) standard. The IATI Standard is used by international development organizations and allows harmonization of FC project location data across heterogenous projects. The data to be collected are subject to minimum requirements in the form of mandatory fields, and there are optional fields flexibly usable for collecting site-specific information.
 
-Furthermore, projects are able to store single location points (e.g. the location of one power plant site) or a larger number of project sites and features (e.g. 300 locations of buildings in different sectors within the framework of a decentralization project). In addition, project sites with larger areas and more complex geometries(e.g. polygons of forest protection areas) are supported as well.
+Furthermore, projects are able to store single location points (e.g., the location of one power plant site) or a larger number of project sites and features (e.g., 300 locations of buildings in different sectors within the framework of a decentralization project). In addition, project sites with larger areas and more complex geometries (e.g., polygons of forest protection areas) are supported as well.
 
-Please note that KfW does not publish any exact coordinates of its project locations. Location data collection in fragile and conflict contexts should be treated with extra diligence.
+Please note, that KfW does not publish any exact coordinates of its project locations. Location data collection in fragile and conflict contexts should be treated with extra diligence.
 
 #### General Notes on Geodata and Location Information
 
 ##### What is a project location?
 
-**A project location can consist of one or more features that are part of a financially supported activity where no further geographical discrimination regarding funding is possible.** An example of a single-feature project location is a financially supported hospital in a specific location. An example of a project location with multiple features is a group of adjacent agricultural plots under a financed irrigation plan that benefits all producers in that area. Another example is a set of protected areas jointly financed from a fund if and only if further geographical discrimination as to the allocation of funds to specific areas is not possible. If discrimination is possible, data for multiple project locations (such as protected areas) and their financial allocation have to be collected. KfW highly encourages increasing geographical discrimination of financial flows to specific project locations to the maximum possible, as this affords greater aid transparency and financial accountability.
+**A project location can consist of one or more features that are part of a financially supported activity where no further geographical discrimination regarding funding is possible.** An example of a single-feature project location is a financially supported hospital in a specific location. An example of a project location with multiple features is a group of adjacent agricultural plots under a financed irrigation plan that benefits all producers in that area. Another example is a set of protected areas jointly financed from a fund if, and only if, further geographical discrimination as to the allocation of funds to specific areas is not possible. If discrimination is possible, data for multiple project locations (such as protected areas) and their financial allocation have to be collected. KfW highly encourages increasing geographical discrimination of financial flows to specific project locations to the maximum possible, as this affords greater aid transparency and financial accountability.
 
 ##### Difference between exact[^1] and approximate locations
 
-For each project location there will be one exact or approximate geolocation data set. The exact geolocation designates the geographical end point of an international development assistance financial flow. Approximate locations can be used however when no exact geoinformation is (yet) available, or such is not be collected for other reasons (details see below).
+For each project location there will be one exact or approximate geolocation data set. The exact geolocation designates the geographical end point of an international development assistance financial flow. Approximate locations can be used however, when no exact geoinformation is (yet) available, or such is not collected for other reasons (details see below).
 
 For exact locations, geographical data are to be collected with GPS tools and eventually edited in a Geographical Information System (GIS). Approximate locations should be given on administrative scales using the GADM database as a global standard.
 
@@ -26,7 +26,7 @@ For exact locations, geographical data are to be collected with GPS tools and ev
 
 ##### When to collect project location information
 
-KfW strongly encourages the PEA and/or consultant staff to collect exact or approximate geo-coordinates as early on as possible in the project cycle to increase the usage potential of such data throughout the entire project cycle. Ideally, data should be collected already during the project preparation phase, e.g.as part of the *Feasibility Study*.
+KfW strongly encourages the PEA and/or consultant staff to collect exact or approximate geo-coordinates as early on as possible in the project cycle to increase the usage potential of such data throughout the entire project cycle. Ideally, data should be collected already during the project preparation phase, e.g., as part of the feasibility study.
 
 If no exact locations can be determined at this stage, approximate location should be used and later be checked during the project appraisal and inception stages (including possible transformation from approximate to exact location information). During project implementation, data should be updated at least annually in project progress reviews, and in order to reflect potential changes in the geographical allocation of funds, which are common in Financial Cooperation projects.
 
@@ -34,23 +34,22 @@ If no exact locations can be determined at this stage, approximate location shou
 
 'Exact locations' are measured via GPS devices, and geo-coordinates are to be collected as precisely as possible. For this purpose, three different geometry types can be used
 
-1.  Point geometries (e.g. a well or a hospital)
+1.  Point geometries (e.g., a well or a hospital)
 
-2.  Line geometries (e.g. a road or transmission line)
+2.  Line geometries (e.g., a road or transmission line)
 
-3.  Polygon geometries/shapes (e.g. a protected area or agricultural
+3.  Polygon geometries/shapes (e.g., a protected area or agricultural
     plots)
 
-All exact project locations have to be collected at first as a point geometry that represents a gateway to the project location, irrespective of the actual feature geometry (i.e., also for lines and polygons). This may be for example the center of a road, a village adjacent to agricultural plots or the administration building of a protected forest. If there is a line or polygon geometry and no gateway can be defined, the geometrical center (centroid) is to be used. This information is to be collected in an Excel--template (xlsx) or a future open-source based geodata collection tool providing the geographical coordinates of the gateway point (more information to be provided at [KfW RMMV Guidebook](https://www.kfw-entwicklungsbank.de/Service/Publikationen-Videos/Publikationen-thematisch/Digitalisierung/RMMV-Guidebook/)\.
+All exact project locations have to be collected at first as a point geometry that represents a gateway to the project location, irrespective of the actual feature geometry (i.e., also for lines and polygons). This may be for example the center of a road, a village adjacent to agricultural plots or the administration building of a protected forest. If there is a line or polygon geometry and no gateway can be defined, the geometrical center (centroid) is to be used. This information is to be collected in an Excel template (xlsx) or a future open-source based geodata collection tool providing the geographical coordinates of the gateway point (more information to be provided at [KfW RMMV Guidebook](https://www.kfw-entwicklungsbank.de/Service/Publikationen-Videos/Publikationen-thematisch/Digitalisierung/RMMV-Guidebook/)\.
 
 In addition, line and polygon geometries have to be collected in KML[^2] format independently for each project site (details are given below in data formats and templates).
 
-[^2]: KML (KMZ) is an open XML Standard for Points, Lines and Shapes. Officially named the OpenGIS KML Encoding Standard (OGC KML). It is maintained by the Open Geospatial Consortium, Inc. (OGC). Other Geoformats (e.g., Shapefiles or Geojson) can usually be converted to KML in Standard GIS Software suchas ArcGIS or QGIS.
+[^2]: KML (KMZ) is an open XML Standard for Points, Lines and Shapes. Officially named the OpenGIS KML Encoding Standard (OGC KML). It is maintained by the Open Geospatial Consortium, Inc. (OGC). Other Geoformats (e.g., Shapefiles or Geojson) can usually be converted to KML in Standard GIS Software such as ArcGIS or QGIS.
 
 #### Figure 1: Schematic Representation of Different Location Data for the GeoApp
 
-Figure 
-**Legend**
+Figure + Legend
 
 
 ##### When to use approximate[^1] geo location information
@@ -63,13 +62,13 @@ Approximate locations can be used when no exact geoinformation is available (yet
 
 -   the target location(s) is/are one or more administrative units.
 
-In such cases, approximate location must be defined based on administrative units applying the [GADM standard](https://gadm.org/)\. GADM is used as a common standard for administrative units to afford harmonized and consistent collection of approximate locations.
+In such cases, approximate location must be defined based on administrative units applying the [Global Aviation Data Management (GADM) standard](https://gadm.org/)\. GADM is used as a common standard for administrative units to afford harmonized and consistent collection of approximate locations.
 
 #### Project Geodata Standard Formats and Templates
 
-##### Exact locations using Excel Template (and potentially KML files)
+##### Exact locations using the Excel Template (and potentially KML files)
 
-As outlined above, all project locations should be collected using the Excel template (or a future open-source-based geodata collection tool) provided by KfW, which utilizes predefined categories under the IATI standard and built-in selection methods facilitating clean data entry. The geolocation is to be submitted in Excel with the geo-coordinates that can be obtained with a GPS tool. **All coordinates are to be collected using** **WGS 84**[^3] **as the coordinate reference system.** WGS 84 is the de--facto standard for web mapping applications. Geo-coordinates are to be provided in the decimal place format 00.00000 in the order LONG, LAT (using at least 5 digits after the separator).
+As outlined above, all project locations should be collected using the Excel template (or a future open-source-based geodata collection tool) provided by KfW, which utilizes predefined categories under the IATI standard and built-in selection methods facilitating clean data entry. The geolocation is to be submitted in Excel with the geo-coordinates that can be obtained with a GPS tool. **All coordinates are to be collected using** **WGS 84**[^3] **as the coordinate reference system.** WGS 84 is the de-facto standard for web mapping applications. Geo-coordinates are to be provided in the decimal place format 00.00000 in the order LONG, LAT (using at least 5 digits after the separator).
 [^3]: World Geodetic System 1984 (https://support.virtual-surveyor.com/en/support/solutions/articles/1000261351-what-is-wgs84\)
 
 -   **For point locations** like buildings, filling out the exact GPS
