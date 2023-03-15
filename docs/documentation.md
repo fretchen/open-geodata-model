@@ -70,7 +70,7 @@ In such cases, approximate location must be defined based on administrative unit
 ##### Exact locations using Excel Template (and potentially KML files)
 
 As outlined above, all project locations should be collected using the Excel template (or a future open-source-based geodata collection tool) provided by KfW, which utilizes predefined categories under the IATI standard and built-in selection methods facilitating clean data entry. The geolocation is to be submitted in Excel with the geo-coordinates that can be obtained with a GPS tool. **All coordinates are to be collected using** **WGS 84**[^3] **as the coordinate reference system.** WGS 84 is the de--facto standard for web mapping applications. Geo-coordinates are to be provided in the decimal place format 00.00000 in the order LONG, LAT (using at least 5 digits after the separator).
-[^3]: > 38 [World Geodetic System 1984](https://support.virtual-surveyor.com/en/support/solutions/articles/1000261351-what-is-wgs84\)
+[^3]: World Geodetic System 1984 (https://support.virtual-surveyor.com/en/support/solutions/articles/1000261351-what-is-wgs84\)
 
 -   **For point locations** like buildings, filling out the exact GPS
     point location in the Excel template is sufficient. We estimate that about 90% of all project locations are point locations.
@@ -95,7 +95,7 @@ If the respective administrative unit level has not been defined in GADM, you ma
 
 Mixing the administrative unit levels is not allowed because this would render the Geo- data Model inconsistent.
 
-The GIS database of GADM can be downloaded [here](https://gadm.org/data.html) and analyzed in a common Geographic Information System such as QGIS, ArcGIS, or Google Earth Pro. Data collectors have to enter the GADM-defined polygon Geographic ID (GID), the GID level and the utilized GADM database version. See [\> Figure 2 below](#approximate-locations-using-excel-template-and-gadm-standard) for more information:
+The GIS database of GADM can be downloaded [here](https://gadm.org/data.html) and analyzed in a common Geographic Information System such as QGIS, ArcGIS, or Google Earth Pro. Data collectors have to enter the GADM-defined polygon Geographic ID (GID), the GID level and the utilized GADM database version. See [Figure 2 below](#approximate-locations-using-excel-template-and-gadm-standard) for more information:
 
 #### Figure 2: How to Collect Project Location Data
 
