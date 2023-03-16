@@ -12,7 +12,6 @@ repo_url: https://github.com/openkfw/d4dtools
 edit_uri: edit/main/docs/
 
 nav:
-  - "index.md"
   - "documentation.md"
     
 markdown_extensions:
