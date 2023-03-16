@@ -10,7 +10,7 @@ Furthermore, projects are able to store single location points (e.g., the locati
 
 Please note, that KfW does not publish any exact coordinates of its project locations. Location data collection in fragile and conflict contexts should be treated with extra diligence.
 
-#### General Notes on Geodata and Location Information
+## General Notes on Geodata and Location Information
 
 ##### What is a project location?
 
