@@ -16,7 +16,8 @@
         },
         "budgetShare": {
             "description": "The budget share allocated to this location in €.",
-            "type": "number"
+            "type": "number",
+            "minimum": 0
         },
         "dac5PurposeCode": {
             "description": "The DAC 5 Purpose Codes for the entire project.",

@@ -7,8 +7,8 @@ with the technical notes.
 import json
 
 import pandas as pd
-from jsonschema import validate
-
+from jsonschema import validate, ValidationError
+import pytest
 
 def test_load_schema():
     """
@@ -129,4 +129,44 @@ def test_validate_csv():
     for index, row in csv_df.iterrows():
         test_dict = row.dropna().to_dict()
         print("Test csv row: ", index)
+        validate(instance=test_dict, schema=schema)
+
+
+def test_budgetShare_schema():
+    """
+    Test that the budget share cannot be smaller than zero.
+    """
+    schema_name = "references/project_location_schema.json"
+    with open(schema_name, encoding="utf-8") as f:
+        schema = json.load(f)
+
+    # create a test dict that could be validated via jsonschema
+    test_dict = {
+        "kfwProjectNoINPRO": 123456,
+        "dataOwner": "Test Data Owner",
+        "publishingRestrictions": "yes",
+        "locationName": "Test Location Name",
+        "plannedOrActualStartDate": "Test Planned or Actual Start Date",
+        "plannedOrActualEndDate": "Test Planned or Actual Start Date",
+        "activityDescriptionGeneral": "Test Activity Description General",
+        "kcThemeSubSector": "Test KC Theme Sub Sector",
+        "locationTypeName": "Test Location Type Name",
+        "dac5PurposeCode": "Test DAC5 Purpose Classification CRS Code",
+        "geographicExactness": "exact",
+        "latitude": -5.353234,
+        "longitude": 5.4543,
+        "budgetShare": 1,
+    }
+
+    # now validate the test dict
+    validate(instance=test_dict, schema=schema)
+
+    # now try to validate a negative budget share
+    test_dict["budgetShare"] = -1
+    with pytest.raises(ValidationError):
+        validate(instance=test_dict, schema=schema)
+
+    # now try with a string
+    test_dict["budgetShare"] = "string"
+    with pytest.raises(ValidationError):
         validate(instance=test_dict, schema=schema)
